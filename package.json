@@ -1,0 +1,22 @@
+{
+  "name": "nodeblog",
+  "version": "1.0.0",
+  "description": "Demonstration Blog app built with Node, Express, EJS and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markallen01666/nodeBlog.git"
+  },
+  "author": "M Allen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markallen01666/nodeBlog/issues"
+  },
+  "homepage": "https://github.com/markallen01666/nodeBlog#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
