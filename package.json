@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/markallen01666/nodeBlog#readme",
   "dependencies": {
+    "ejs": "^2.7.1",
     "express": "^4.17.1"
   },
   "devDependencies": {
