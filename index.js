@@ -29,6 +29,12 @@ app.get('/', async (req, res) => {
         blogposts
     })
 })
+app.get('/search', async (req, res) => {
+    const blogposts = await BlogPost.find({})
+    res.render('search', {
+        blogposts
+    })
+})
 app.get('/about', (req, res) => {
     res.render('about')
 })
@@ -44,6 +50,14 @@ app.get('/posts/new', (req, res) => {
 app.post('/posts/store', async (req, res) => {
     await BlogPost.create(req.body) 
     res.redirect('/')
+})
+app.post('/search', async (req, res) => {
+    const blogposts = await BlogPost.find({
+        title: {$regex: req.body.title, $options:"i"}
+    })
+    res.render('search', {
+        blogposts
+    })
 })
 
 // serve
