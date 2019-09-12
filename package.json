@@ -1,5 +1,5 @@
 {
-  "name": "nodeblog",
+  "name": "booksBlog",
   "version": "1.0.0",
   "description": "Demonstration Blog app built with Node, Express, EJS and MongoDB",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/markallen01666/nodeBlog.git"
+    "url": "git+https://github.com/markallen01666/booksBlog.git"
   },
   "author": "M Allen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/markallen01666/nodeBlog/issues"
+    "url": "https://github.com/markallen01666/booksBlog/issues"
   },
-  "homepage": "https://github.com/markallen01666/nodeBlog#readme",
+  "homepage": "https://github.com/markallen01666/booksBlog#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^2.7.1",
