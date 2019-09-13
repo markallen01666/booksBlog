@@ -41,8 +41,11 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
     res.render('contact')
 })
-app.get('/post', (req, res) => {
-    res.render('post')
+app.get('/post/:id', async (req, res) => {
+    const blogpost = await BlogPost.findById(req.params.id)
+    res.render('post', {
+        blogpost
+    })
 })
 app.get('/posts/new', (req, res) => {
     res.render('create')
@@ -52,9 +55,10 @@ app.post('/posts/store', async (req, res) => {
     res.redirect('/')
 })
 app.post('/search', async (req, res) => {
-    const blogposts = await BlogPost.find({
-        title: {$regex: req.body.title, $options:"i"}
-    })
+    const blogposts = await BlogPost.find({$or:[
+        {title: {$regex: req.body.title, $options:"i"}}, 
+        {author: {$regex: req.body.title, $options:"i"}}
+    ]})
     res.render('search', {
         blogposts
     })

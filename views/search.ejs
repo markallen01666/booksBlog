@@ -13,7 +13,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
               <h1>Search posts</h1>
-              <span class="subheading">Search posts based on book title.</span>
+              <span class="subheading">Search posts based on book title or author</span>
             </div>
           </div>
         </div>
@@ -27,11 +27,11 @@
           <form action="/search" method="POST">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
-                <label>Title</label>
+                <label>Title or author name</label>
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="title"
+                  placeholder="Enter title or author name (full or part)"
                   id="title"
                   name="title"
                 />
@@ -56,11 +56,14 @@
               <h2 class="post-title">
                 <%= blogposts[i].title %>
               </h2>
+              <h4 class="post-subtitle">
+                <%= blogposts[i].author %>
+              </h4>
             </a>
             <p class="post-meta">
               Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 24, 2019
+              <a href="#"><%= blogposts[i].username %></a>
+              on <%= blogposts[i].datePosted.toDateString() %>
             </p>
           </div>
           <hr />

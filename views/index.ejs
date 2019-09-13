@@ -14,9 +14,7 @@
             <div class="site-heading">
               <h1>booksBlog</h1>
               <span class="subheading"
-                >A demonstration Blog app using Node, Express, EJS, MongoDB and
-                the Start Bootstrap 'Clean Blog' theme. Project is based on
-                tutorial by Greg Lim.</span
+                >Interesting books you may never have heard of</span
               >
             </div>
           </div>
@@ -35,13 +33,13 @@
                 <%= blogposts[i].title %>
               </h2>
               <h3 class="post-subtitle">
-                <%= blogposts[i].body %>
+                <%= blogposts[i].author %>
               </h3>
             </a>
             <p class="post-meta">
               Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 24, 2019
+              <a href="#"><%= blogposts[i].username %></a>
+              on <%= blogposts[i].datePosted.toDateString() %>
             </p>
           </div>
           <hr />
