@@ -1,3 +1,5 @@
+// render full post as page controller
+
 const BlogPost = require("../models/BlogPost.js");
 
 module.exports = async (req, res) => {

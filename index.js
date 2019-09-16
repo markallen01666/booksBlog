@@ -1,4 +1,4 @@
-// nodeBlog - a demonstration Blog app using Node, Express, EJS, MongoDB and Mongoose based on example by Greg Lim
+// booksBlog - a demonstration Blog app using Node, Express, EJS, MongoDB and Mongoose based on example by Greg Lim
 // M. Allen - 2019
 
 // initialisation
