@@ -20,6 +20,10 @@ const singlePostController = require("./controllers/singlePost");
 const homeController = require("./controllers/home");
 const searchStartController = require("./controllers/searchStart");
 const searchPostsController = require("./controllers/searchPosts");
+const newUserController = require("./controllers/newUser")
+const storeUserController = require("./controllers/storeUser")
+const loginController = require("./controllers/login")
+const loginUsercontroller = require('./controllers/loginUser')
 
 // validation middleware
 const validationMiddleWare = require("./middleware/validationMiddleware");
@@ -29,6 +33,7 @@ mongoose.connect("mongodb://localhost/my_database", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
+
 app.use(express.static("public"));
 app.use(bodyParser.json());
 app.use(
@@ -48,8 +53,13 @@ app.get("/about", aboutController);
 app.get("/contact", contactController);
 app.get("/post/:id", singlePostController);
 app.get("/posts/new", newPostController);
+app.get("/auth/register", newUserController)
+app.get("/auth/login", loginController);
 app.post("/posts/store", saveNewPostController);
 app.post("/search", searchPostsController);
+app.post("/users/register", storeUserController);
+app.post('/users/login', loginUsercontroller)
+
 
 // serve
 app.listen(4000, () => {

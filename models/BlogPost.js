@@ -1,4 +1,4 @@
-// database intitalise and schema
+// Blogpost database schema
 
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
