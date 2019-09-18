@@ -1,0 +1,43 @@
+<!-- 404 - Not Found page - view -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('layouts/header'); -%>
+
+<body>
+
+  <%- include('layouts/navbar'); -%>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/404.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Sorry!</h1>
+            <span class="subheading">The page you were looking for was not found</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>You have requested a page that is not available or does not exist. This may be because the URL entered is incorrect. Alternatively, it could be because the link you followed is broken, in which case please contact us so that we can fix it as quickly as possible. </p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <%- include('layouts/footer'); -%>
+  <%- include('layouts/scripts'); -%>
+
+</body>
+
+</html>

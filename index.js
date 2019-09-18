@@ -87,6 +87,9 @@ app.post(
   redirectIfAuthenticatedMiddleware,
   loginUsercontroller
 );
+app.use((req, res) => {
+  res.render('404')
+})
 
 // serve
 app.listen(4000, () => {
