@@ -1,4 +1,4 @@
-// search page initial render controller
+// search page initial render - controller
 
 const BlogPost = require("../models/BlogPost.js");
 

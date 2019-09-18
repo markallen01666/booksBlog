@@ -1,4 +1,4 @@
-// search posts controller
+// search posts - controller
 
 const BlogPost = require("../models/BlogPost.js");
 

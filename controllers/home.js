@@ -1,4 +1,4 @@
-// home page controller
+// home page - controller
 
 const BlogPost = require("../models/BlogPost.js");
 

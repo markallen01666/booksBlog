@@ -1,4 +1,4 @@
-// render full post as page controller
+// render full post as page - controller
 
 const BlogPost = require("../models/BlogPost.js");
 

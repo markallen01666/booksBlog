@@ -1,4 +1,4 @@
-// store new post data in database controller
+// store new post data in database - controller
 
 const BlogPost = require("../models/BlogPost.js");
 const path = require('path');

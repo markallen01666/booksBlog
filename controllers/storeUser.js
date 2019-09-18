@@ -1,4 +1,4 @@
-// store new user data controller
+// store new user data - controller
 
 const User = require("../models/User.js")
 const path = require('path')

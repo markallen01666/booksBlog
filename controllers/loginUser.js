@@ -1,4 +1,4 @@
-// authenticate user controller
+// authenticate user - controller
 
 const bcrypt = require('bcrypt')
 const User = require('../models/User')
@@ -10,6 +10,7 @@ module.exports = (req, res) => {
         if (user) {     // user exists
             bcrypt.compare(password, user.password, (error, same) => {
                 if (same) {     // password match
+                    req.session.userId = user._id
                     res.redirect('/')
                 }
                 else {          // passwords don't match
