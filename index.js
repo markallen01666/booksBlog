@@ -58,10 +58,11 @@ app.set("view engine", "ejs");
 
 // globals
 global.loggedIn = null;   // user is not logged in
+global.loggedInUsername = "";   // logged in user's name
 
 // add logged in status to requests
 app.use("*", (req, res, next) => {
-  global.loggedIn = req.session.userId;
+  loggedIn = req.session.userId;
   next();
 });
 
