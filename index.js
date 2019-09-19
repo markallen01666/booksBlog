@@ -11,6 +11,7 @@ const bodyParser = require("body-parser");
 const BlogPost = require("./models/BlogPost.js");
 const fileUpload = require("express-fileupload");
 const expressSession = require("express-session");
+const flash = require('connect-flash')
 
 //controllers
 const newPostController = require("./controllers/newPost");
@@ -65,6 +66,9 @@ app.use("*", (req, res, next) => {
   loggedIn = req.session.userId;
   next();
 });
+
+// flushing
+app.use(flash());
 
 // Route behaviour
 app.get("/", homeController);
