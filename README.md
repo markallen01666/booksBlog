@@ -3,7 +3,7 @@ Demonstration blog tool built using Node, Express, EJS and MongoDB
 
 Link: https://powerful-harbor-20047.herokuapp.com
 
-This is a demonstration of a server-based blogging web app that uses Bootstrap, Node, Express, EJS, Express Session, Mongoose and MongoDB Atlas cloud database. It demonstrates backend Create/Read manipulation of a MongoDB Atlas database hosted on AWS. Node server hosting uses Heroku.
+This is a demonstration of a server-based blogging web app built using Bootstrap, Node, Express, EJS, Express Session, Mongoose and MongoDB Atlas cloud database. It demonstrates backend Create/Read manipulation of a MongoDB Atlas database hosted on AWS. Node server hosting uses Heroku.
 
 Additional functionality includes subject and author searches, and user signup, login, and authentication functionality.
 
