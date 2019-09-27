@@ -32,7 +32,7 @@
             <p><%= blogpost.body %></p>
             <p class="post-meta">
               Posted by
-              <a href="#"><%= blogpost.username %></a>
+              <em><%= blogpost.userid.username %></em>
               on <%= blogpost.datePosted.toDateString() %>
             </p>
           </div>

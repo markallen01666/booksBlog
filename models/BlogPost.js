@@ -8,7 +8,11 @@ const BlogPostSchema = new Schema({
   subtitle: String,
   author: String,
   body: String,
-  username: String,
+  userid: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
   imageUrl: String,
   datePosted:{ 
     type: Date,

@@ -34,7 +34,7 @@ const authMiddleware = require("./middleware/authMiddleware");
 const redirectIfAuthenticatedMiddleware = require("./middleware/redirectIfAuthenticatedMiddleware");
 
 // connect database and register middleware
-mongoose.connect("mongodb://localhost/my_database", {
+mongoose.connect("mongodb+srv://53ptolemy8607:n6SkRDlbTED6kPZN@cluster0-wvhp3.mongodb.net/test", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
