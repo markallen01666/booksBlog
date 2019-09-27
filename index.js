@@ -97,6 +97,10 @@ app.use((req, res) => {
 })
 
 // serve
-app.listen(4000, () => {
-  console.log("Listening on port 4000");
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 4000;
+}
+app.listen(port, () => {
+  console.log("App listening");
 });
