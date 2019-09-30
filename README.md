@@ -1,5 +1,5 @@
 # booksBlog
-Demonstration blog tool built using Node, Express, EJS and MongoDB
+Demonstration blog tool built using Node, Express, EJS and MongoDB.
 
 Link: https://powerful-harbor-20047.herokuapp.com
 
